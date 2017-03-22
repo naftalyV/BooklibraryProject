@@ -1,0 +1,36 @@
+﻿<Window x:Class="Library.SearchWindo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Library"
+        mc:Ignorable="d"
+        Title="SearchWindo" Height="400" Width="850">
+    <Grid >
+        <ComboBox x:Name="CmbCategoty" HorizontalAlignment="Left" Height="19" Margin="291,27,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="CmbCategoty_SelectionChanged"/>
+        <TextBlock x:Name="textBlockCategory" HorizontalAlignment="Left" TextWrapping="Wrap" Text="חיפוש לפי קטגוריה" VerticalAlignment="Top" Margin="306,9,0,0" Width="103"/>
+        <TextBox x:Name="textBoxName" HorizontalAlignment="Left" Height="23" Margin="438,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="116" TextChanged="textBoxName_TextChanged"/>
+        <TextBlock x:Name="textBlockName" HorizontalAlignment="Left" Margin="451,59,0,0" TextWrapping="Wrap" Text=" חיפוש לפי שם פריט" VerticalAlignment="Top"/>
+        <DataGrid x:Name="dataGridSearch" MinWidth="800" HorizontalAlignment="Left" Height="184" Margin="0,175,0,0" VerticalAlignment="Top" Width="832" IsReadOnly="True" AutoGeneratingColumn="dataGridSearch_AutoGeneratingColumn"/>
+        <TextBox x:Name="textBoxPublishing" HorizontalAlignment="Left" Height="23" Margin="434,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="textBoxPublishing_TextChanged_1"/>
+        <TextBlock x:Name="textBlockPublishing" HorizontalAlignment="Left" Margin="438,6,0,0" TextWrapping="Wrap" Text="חיפוש לפי הוצאה לאור" VerticalAlignment="Top" Width="120"/>
+        <TextBlock x:Name="TextBlockSubCategoty" HorizontalAlignment="Left" Margin="291,59,0,0" TextWrapping="Wrap" Text="חיפוש לפי תת קטגוריה" VerticalAlignment="Top"/>
+        <ComboBox x:Name="CmbSubCategoty" HorizontalAlignment="Left" Margin="291,90,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="CmbSubCategoty_SelectionChanged"/>
+        <Button x:Name="btnRmove" Content="מחיקת פריט" HorizontalAlignment="Left" Height="21" Margin="707,113,0,0" VerticalAlignment="Top" Width="93" Click="button_Click"/>
+        <Button x:Name="btnEdit" Content="עריכה" HorizontalAlignment="Left" Height="25" Margin="707,74,0,0" VerticalAlignment="Top" Width="93" Click="btnEdit_Click"/>
+        <Button x:Name="btnReturn" Content="החזרת פריט" HorizontalAlignment="Left" Margin="707,42,0,0" VerticalAlignment="Top" Width="93" Click="btnReturn_Click"/>
+        <Button x:Name="btnToborrow" Content="השאלת פריט" HorizontalAlignment="Left" Margin="707,7,0,0" VerticalAlignment="Top" Width="93" Click="btnToborrow_Click"/>
+        <Button x:Name="btnShowAll" Content="&#xA;הצג&#xD;&#xA;  &#xA;&#xA;הכל" HorizontalAlignment="Left" Height="114" Margin="586,13,0,0" VerticalAlignment="Top" Width="99" Click="btnShowAll_Click"/>
+        <TextBlock x:Name="TextBlockMultipleSearch" HorizontalAlignment="Left" Height="24" Margin="10,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"><Span FlowDirection="RightToLeft"><Run Text="חיפוש מרובה"/><Run Text="    "/><Run Text="   "/></Span></TextBlock>
+        <TextBox x:Name="textBoxMultipleSearchName" HorizontalAlignment="Left" Height="23" Margin="10,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="MultipleSearch"/>
+        <TextBox x:Name="TextBoxMultipleSearchPublishing" HorizontalAlignment="Left" Height="23" Margin="10,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="MultipleSearch"/>
+        <TextBlock x:Name="textBlockMultipleSearchName" HorizontalAlignment="Left" Margin="155,58,0,0" TextWrapping="Wrap" Text=":שם פריט" VerticalAlignment="Top"/>
+        <TextBlock x:Name="TextBlockPublishing" HorizontalAlignment="Left" Margin="155,96,0,0" TextWrapping="Wrap" Text=":הוצאה לאור" VerticalAlignment="Top"/>
+        <Button x:Name="btnNewItem" Content="הוספת פריט" HorizontalAlignment="Left" Height="36" Margin="291,134,0,0" VerticalAlignment="Top" Width="267" Click="btnNewItem_Click"/>
+        <ComboBox x:Name="comboBoxMultipleSearch" HorizontalAlignment="Left" Margin="10,134,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="MultipleSearch"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="155,140,0,0" TextWrapping="Wrap" Text=":קטגוריה
+" VerticalAlignment="Top" RenderTransformOrigin="-0.102,0.375"/>
+
+    </Grid>
+</Window>
+    

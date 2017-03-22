@@ -1,0 +1,21 @@
+﻿<Window x:Class="Library.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Library"
+        mc:Ignorable="d"
+        Title="חלון ראשי ספריה" Height="600" Width="400" Closing="SaveInClosing">
+    <Grid x:Name="___No_Name_" Margin="0,0,-8,-28">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btnAddItem" Content="הוספת פריטים" HorizontalAlignment="Left" Height="91" Margin="59,305,0,0" VerticalAlignment="Top" Width="250" Click="btnAdd_Click" FontSize="20" FontWeight="Bold" IsEnabled="False"/>
+        <Button x:Name="btnExit" Content="יציאה מהמערכת" HorizontalAlignment="Left" Height="72" Margin="59,422,0,0" VerticalAlignment="Top" Width="250" Click="btnExit_Click" FontSize="20" FontWeight="ExtraBold" FlowDirection="RightToLeft"/>
+        <Button x:Name="btnSearch" Content="קטלוג הספריה" HorizontalAlignment="Left" Height="117" Margin="59,35,0,0" VerticalAlignment="Top" Width="250" Click="btnSearch_Click" FontSize="20" FontWeight="Bold" FlowDirection="RightToLeft" RenderTransformOrigin="-0.64,0.505"/>
+        <Button x:Name="btnUsers" Content="ניהול משתמשים" HorizontalAlignment="Left" Height="81" Margin="59,191,0,0" VerticalAlignment="Top" Width="250" IsEnabled="False" Click="btnUsers_Click" FontWeight="Bold" FontSize="22"/>
+        <TextBlock x:Name="TextBlockCurrentUser" HorizontalAlignment="Left" Margin="290,157,0,0" TextWrapping="Wrap" Text="  " VerticalAlignment="Top" FontWeight="Bold" TextAlignment="Right" Height="16" Width="7"/>
+
+    </Grid>
+</Window>
